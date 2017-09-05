@@ -41,3 +41,41 @@ número menor 0 igual a 9.
 
 
 	Referencia Completa: 18000359700002387***1***
+
+
+Ejemplo en python:
+
+```python
+	
+import math
+
+"""
+    Algoritmo Bancomer 00 (1 Digito Verificador)
+    Procedimiento para calcular el Digito Verificador
+    DATOS NECESARIOS PARA EL CALCULO:
+    Referencia de 1 a 19 Digitos
+"""
+
+def algoritmo00(reference):
+    isTwo = True
+    sum_elements = 0
+    for n in reversed(reference):
+        if isTwo:
+            isTwo = False
+            result = int(n) * 2
+        else:
+            isTwo = True
+            result = int(n) * 1
+
+        if result > 9:
+           ntemp = list(str(result))
+           result = int(ntemp[0]) + int(ntemp[1])
+
+        sum_elements =  sum_elements + result
+
+    round_up = int(math.ceil(sum_elements / 10.0)) * 10
+    digit = round_up - sum_elements
+
+    return digit
+
+```
