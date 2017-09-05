@@ -9,3 +9,4 @@
 
 - [Algoritmo Paynet](https://github.com/resuelve/cookbook/blob/master/algoritmos/algoritmo_paynet.md)
 
+- [Validación de cuenta CLABE](https://github.com/resuelve/clabe_validator/blob/master/README.md)
