@@ -1,14 +1,14 @@
 ## Algoritmo Paynet (1 Dígito Verificador)
 
 
-###Procedimiento para calcular el Dígito Verificador
+### Procedimiento para calcular el Dígito Verificador
 
 	
 
 #### DATOS NECESARIOS PARA EL CALCULO:
 
 
-####Ejemplo:
+#### Ejemplo:
 
 Si la Referencia es igual a: ```00003Y10101396539```
 
